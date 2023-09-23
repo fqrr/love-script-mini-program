@@ -1,0 +1,74 @@
+.component {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog {
+    width: 630rpx;
+    background-color: #fff;
+    border-radius: 7.5rpx;
+}
+
+.dialog-icon {
+    display: block;
+    width: 30rpx;
+    height: 30rpx;
+    margin-top: 15rpx;
+    margin-left: 585rpx;
+}
+
+.dialog-title {
+    margin: 0 60rpx;
+    font-size: 37.5rpx;
+}
+
+.dialog-subtitle,.dialog-title {
+    width: 510rpx;
+    text-align: center;
+    font-weight: 700;
+}
+
+.dialog-subtitle {
+    margin: 30rpx 60rpx;
+    font-size: 30rpx;
+}
+
+.dialog-label-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 570rpx;
+    margin: 30rpx;
+}
+
+.dialog-label-item {
+    width: 262.5rpx;
+    height: 60rpx;
+    margin: 15rpx 7.5rpx;
+    font-size: 30rpx;
+    line-height: 60rpx;
+    color: #f76371;
+    background-color: #feedf3;
+    border: 1rpx solid #f76371;
+    border-radius: 7.5rpx;
+    text-align: center;
+}
+
+.dialog-submit {
+    width: 570rpx;
+    height: 90rpx;
+    margin: 30rpx;
+    font-size: 30rpx;
+    line-height: 90rpx;
+    text-align: center;
+    color: #fff;
+    background-color: #76bf00;
+    border-radius: 7.5rpx;
+}

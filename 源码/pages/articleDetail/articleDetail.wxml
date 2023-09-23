@@ -1,0 +1,9 @@
+<import src="../../libs/wxParse/wxParse.wxml"></import>
+<ad unit-id="adunit-73054b7e1b6c95f1" ></ad>
+
+<view class="title">{{articleDetail.title}}</view>
+<view class="subtitle">发布时间：{{articleDetail.createTime}} 阅读：{{articleDetail.viewCount}}</view>
+<view class="article">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
+</view>
+<view class="footer">© 恋爱话术</view>

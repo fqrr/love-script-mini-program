@@ -1,0 +1,8 @@
+<view bindtap="onCloseTap" class="component" wx:if="{{show}}">
+    <view catchtap="onDialogTap" class="dialog">
+        <image bindtap="onCloseTap" class="dialog-icon" src="/images/icon_close.png"></image>
+        <image class="dialog-image" src="/images/icon_member.png"></image>
+        <view class="dialog-subtitle">您尚未被授权！快去激活吧</view>
+        <view bindtap="onConfirmTap" class="dialog-submit">去开通</view>
+    </view>
+</view>

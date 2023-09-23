@@ -1,0 +1,35 @@
+<image class="banner" src="/images/banner_home.png"></image>
+<view bindtap="onSearchTap" class="search-box row">
+    <view class="search-input row">
+        <image class="search-icon" src="/images/icon_search.png"></image>
+        <view class="search-text">请输入关键词搜索聊天话术</view>
+    </view>
+    <view class="search-button">搜索</view>
+</view>
+<view class="search-text-list">
+    <text>热索：</text>
+    <text bindtap="onSearchItemTap" class="search-text-item" data-keyword="你好">你好</text>
+    <text bindtap="onSearchItemTap" class="search-text-item" data-keyword="谢谢">谢谢</text>
+    <text bindtap="onSearchItemTap" class="search-text-item" data-keyword="在干嘛">在干嘛</text>
+</view>
+<view class="search-image-list row">
+    <image bindtap="onTopicItemTap" class="search-image-image" data-id="53" data-name="睡前聊天" src="/images/image_home_1.png"></image>
+    <image bindtap="onTopicItemTap" class="search-image-image" data-id="54" data-name="要照片" src="/images/image_home_2.png"></image>
+    <image bindtap="onTopicItemTap" class="search-image-image" data-id="55" data-name="哄女生" src="/images/image_home_3.png"></image>
+    <image bindtap="onTopicItemTap" class="search-image-image" data-id="56" data-name="老司机" src="/images/image_home_4.png"></image>
+</view>
+<ad unit-id="adunit-73054b7e1b6c95f1" ></ad>
+<view class="category-list">
+    <view class="tip">一款优秀的话术搜索代聊软件</view>
+    <view class="category-item" wx:for="{{categoryList}}" wx:for-item="i" wx:key="index">
+        <view class="category-item-name row">
+            <view class="category-item-name-title">{{i.name}}</view>
+            <view class="category-item-name-subtitle">尬聊只需搜一搜</view>
+        </view>
+        <view class="topic-list row">
+            <view bindtap="onTopicItemTap" class="topic-item" data-id="{{j.id}}" data-name="{{j.name}}" wx:for="{{i.categoryList}}" wx:for-item="j" wx:key="index">{{j.name}}</view>
+        </view>
+    </view>
+
+</view>
+<ad unit-id="adunit-c7dfcae441405d37" ad-type="video" ad-theme="white" ></ad>

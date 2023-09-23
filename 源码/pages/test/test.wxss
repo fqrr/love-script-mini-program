@@ -1,0 +1,39 @@
+.test-item {
+    width: 690rpx;
+    height: 120rpx;
+    margin-left: 30rpx;
+    padding: 30rpx 30rpx 30rpx 0;
+    border-bottom: 1rpx solid #eee;
+}
+
+.test-image {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 15rpx;
+}
+
+.test-title {
+    font-size: 30rpx;
+    font-weight: 700;
+}
+
+.test-count,.test-title {
+    width: 540rpx;
+    height: 60rpx;
+    margin-left: 30rpx;
+    line-height: 60rpx;
+}
+
+.test-count {
+    font-size: 22.5rpx;
+    color: #888;
+}
+
+.test-count-test {
+    width: 270rpx;
+}
+
+.test-count-like {
+    width: 270rpx;
+    text-align: right;
+}

@@ -1,0 +1,99 @@
+page {
+    background-color: #f2f2f2;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+    width: 750rpx;
+}
+
+.container1-box {
+    width: 630rpx;
+    margin-top: 15rpx;
+    margin-left: 30rpx;
+    padding: 30rpx;
+    background-color: #fff;
+}
+
+.container1-title {
+    width: 630rpx;
+    font-size: 30rpx;
+}
+
+.container1-poster {
+    width: 630rpx;
+    margin-top: 30rpx;
+    border-radius: 30rpx;
+}
+
+.container1-line {
+    width: 750rpx;
+}
+
+.container1-bottom {
+    width: 690rpx;
+    height: 129rpx;
+    margin-left: 30rpx;
+    background-color: #fff;
+}
+
+.container1-next {
+    width: 630rpx;
+    height: 90rpx;
+    margin-top: 150rpx;
+    margin-left: 60rpx;
+    font-size: 30rpx;
+    line-height: 90rpx;
+    text-align: center;
+    background-color: #fff;
+    border: 1rpx solid #888;
+    border-radius: 15rpx;
+}
+
+.container2-text {
+    width: 570rpx;
+    height: 120rpx;
+    margin-top: 405rpx;
+    margin-left: 75rpx;
+    font-size: 26.25rpx;
+}
+
+.container2-copy {
+    width: 120rpx;
+    height: 60rpx;
+    margin-top: 60rpx;
+    margin-left: 315rpx;
+    font-size: 26.25rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 30rpx;
+    color: #fff;
+    background-color: #f3bf51;
+}
+
+.container2-next {
+    width: 690rpx;
+    height: 90rpx;
+    margin-top: 105rpx;
+    margin-left: 30rpx;
+    font-size: 30rpx;
+    line-height: 90rpx;
+    font-weight: 700;
+    text-align: center;
+}
+
+.image-more-list {
+    width: 540rpx;
+    height: 90rpx;
+    margin-left: 150rpx;
+}
+
+.image-more-item {
+    height: 90rpx;
+}

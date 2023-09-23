@@ -1,0 +1,36 @@
+<view class="header row">
+    <view class="header-avatarurl">
+        <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="header-nickname">
+        <open-data type="userNickName"></open-data>
+        <text space="emsp" wx:if="{{userId}}"> ID:{{userId}}</text>
+    </view>
+</view>
+<view class="menu-list">
+    <button bindtap="onMenuItemTap" class="menu-item row" data-id="1" hoverClass="none">
+        <image class="menu-item-icon" src="/images/icon_user_1.png"></image>
+        <view class="menu-item-content">喝酒神器</view>
+        <image class="menu-item-icon" src="/images/icon_right.png"></image>
+    </button>
+    <button class="menu-item row" hoverClass="none" openType="share">
+        <image class="menu-item-icon" src="/images/icon_user_2.png"></image>
+        <view class="menu-item-content">分享出去</view>
+        <image class="menu-item-icon" src="/images/icon_right.png"></image>
+    </button>
+    <button bindtap="onMenuItemTap" class="menu-item row" data-id="2" hoverClass="none">
+        <image class="menu-item-icon" src="/images/icon_user_3.png"></image>
+        <view class="menu-item-content">联系客服</view>
+        <image class="menu-item-icon" src="/images/icon_right.png"></image>
+    </button>
+    <button bindtap="onMenuItemTap" class="menu-item row" data-id="2" hoverClass="none">
+        <image class="menu-item-icon" src="/images/icon_user_6.png"></image>
+        <view class="menu-item-content">做个一样的小程序（招代理）</view>
+        <image class="menu-item-icon" src="/images/icon_right.png"></image>
+    </button>
+    <button bindtap="onMenuItemTap" class="menu-item row" data-id="3" hoverClass="none">
+        <image class="menu-item-icon" src="/images/icon_user_5.png"></image>
+        <view class="menu-item-content">关于我们</view>
+        <image class="menu-item-icon" src="/images/icon_right.png"></image>
+    </button>
+</view>

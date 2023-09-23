@@ -1,0 +1,19 @@
+<image class="banner" src="/images/banner_dialogue.png"></image>
+<view class="top">
+    <view class="title">土味情话大全</view>
+    <view class="subtitle">愿你喜欢的人，深陷在你的套路里无法自拔。</view>
+</view>
+<ad unit-id="adunit-73054b7e1b6c95f1" ></ad>
+
+<view class="tab-list row">
+    <view bindtap="onTabItemTap" class="tab-item" data-type="selected" style="{{type=='selected'?'border-radius:45rpx 0 0 45rpx;color:#fff;background-color:#f6c844':''}}">精选</view>
+    <view bindtap="onTabItemTap" class="tab-item" data-type="new" style="{{type=='new'?'border-radius:0 45rpx 45rpx 0;color:#fff;background-color:#f6c844':''}}">最新</view>
+</view>
+<view class="dialogue-list">
+    <view bindtap="onDialogueItemTap" class="dialogue-item row" data-id="{{item.id}}" wx:for="{{dialogueList}}">
+        <view class="dialogue-item-title single-line">{{item.title}}</view>
+        <image class="dialogue-item-icon" src="/images/icon_right.png"></image>
+    </view>
+</view>
+<xs-member-dialog show="{{dialogShow}}"></xs-member-dialog>
+<ad unit-id="adunit-c7dfcae441405d37" ad-type="video" ad-theme="white" ></ad>

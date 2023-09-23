@@ -1,0 +1,4 @@
+<view class="box">
+    <view class="title">聊天话术神器</view>
+    <view class="text">{{text}}</view>
+</view>

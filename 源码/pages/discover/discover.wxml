@@ -1,0 +1,50 @@
+<view bindtap="onSearchTap" class="search row">
+    <image class="search-icon" src="/images/icon_search.png"></image>
+    <view class="search-text">大家都在搜索"套路"</view>
+</view>
+<ad-custom unit-id="adunit-c95ce44f17f1dba6" ></ad-custom>
+<image class="banner" src="/images/banner_discover.png"></image>
+<view class="title">精彩专题</view>
+<view class="topic-list row">
+    <view bindtap="onTopicItemTap" class="topic-item" data-id="1">
+        <image class="topic-item-image" src="/images/image_discover_1.png"></image>
+    </view>
+    <view bindtap="onTopicItemTap" class="topic-item" data-id="2">
+        <image class="topic-item-image" src="/images/image_discover_2.png"></image>
+    </view>
+    <view bindtap="onTopicItemTap" class="topic-item" data-id="3">
+        <image class="topic-item-image" src="/images/image_discover_3.png"></image>
+    </view>
+</view>
+<view class="title-box row">
+    <view class="title-text">恋爱测试</view>
+    <view bindtap="onTestMoreTap" class="title-more">更多</view>
+</view>
+<scroll-view class="test-list row" scrollX="{{true}}">
+    <view bindtap="onTestItemTap" class="test-item" data-id="{{item.id}}" wx:for="{{testList}}">
+        <image class="test-item-image" src="{{item.image}}"></image>
+        <view class="test-item-title double-line">{{item.title}}</view>
+    </view>
+</scroll-view>
+<view class="title">精选</view>
+<view class="select-list">
+    <view bindtap="onSelectItemTap" class="select-item" data-id="{{i.id}}" data-name="{{i.name}}" style="background-color:{{selectColor[indexI%4].backgroundColor}};" wx:for="{{selectList}}" wx:for-index="indexI" wx:for-item="i">
+        <view class="select-item-title">{{i.name}}</view>
+        <view class="select-item-list row">
+            <view class="select-item-item" style="background-color:{{selectColor[indexI%4].color}};" wx:for="{{i.categoryList}}" wx:for-item="j" wx:key="index">{{j.name}}</view>
+        </view>
+    </view>
+</view>
+<view class="title">形象改造</view>
+<view class="article-list">
+    <view bindtap="onArticleItemTap" class="article-item row" data-id="{{item.id}}" wx:if="{{articleList}}" wx:for="{{articleList}}" wx:key="index">
+        <image class="article-image" src="{{item.image}}"></image>
+        <view>
+            <view class="article-title single-line">{{item.title}}</view>
+            <view class="article-count row">
+                <view class="article-count-text">{{item.likeCount}}人觉得有用</view>
+            </view>
+        </view>
+    </view>
+</view>
+<xs-member-dialog show="{{dialogShow}}"></xs-member-dialog>

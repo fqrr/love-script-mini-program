@@ -1,0 +1,33 @@
+
+<image class="background-image" mode="widthFix" src="/images/background_djt.png" wx:if="{{type=='djt'}}"></image>
+<image class="background-image" mode="widthFix" src="/images/background_chp.png" wx:if="{{type=='chp'}}"></image>
+<view class="container1" wx:if="{{type=='pyq'}}">
+    <view class="container1-box">
+        <view class="container1-title">
+            <text>{{momentDetail.title}}</text>
+        </view>
+        <image class="container1-poster" mode="widthFix" src="{{momentDetail.poster}}"></image>
+    </view>
+    <image class="container1-line" mode="widthFix" src="/images/image_line.png"></image>
+    <view class="container1-bottom">
+        <view class="image-more-list row">
+            <view class="row" style="width:420rpx;">
+                <image class="image-more-item" src="/images/image_more_1.png" style="width:30rpx;" wx:if="{{moreShow}}"></image>
+                <image bindtap="onSaveTap" class="image-more-item" src="/images/image_more_2.png" style="width:165rpx;" wx:if="{{moreShow}}"></image>
+                <image class="image-more-item" src="/images/image_more_3.png" style="width:30rpx;" wx:if="{{moreShow}}"></image>
+                <image bindtap="onCopyTap" class="image-more-item" src="/images/image_more_4.png" style="width:165rpx;" wx:if="{{moreShow}}"></image>
+                <image class="image-more-item" src="/images/image_more_5.png" style="width:30rpx;" wx:if="{{moreShow}}"></image>
+            </view>
+            <image bindtap="onMoreTap" class="image-more-item" src="/images/image_more_6.png" style="width:90rpx;"></image>
+        </view>
+    </view>
+    <view bindtap="onNextTap" class="container1-next">下一条</view>
+</view>
+<view class="container2" wx:if="{{type=='djt'||type=='chp'}}">
+    <view class="container2-text">
+        <text>{{momentDetail.title}}</text>
+    </view>
+    <view bindtap="onCopyTap" class="container2-copy">复制</view>
+    <view bindtap="onNextTap" class="container2-next">下一条</view>
+</view>
+<ad unit-id="adunit-73054b7e1b6c95f1" ></ad>

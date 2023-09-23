@@ -1,0 +1,17 @@
+.dialogue-item {
+    margin: 30rpx;
+}
+
+.dialogue-item-icon {
+    width: 90rpx;
+    height: 90rpx;
+}
+
+.dialogue-item-text {
+    max-width: 450rpx;
+    margin: 0 15rpx;
+    padding: 15rpx;
+    font-size: 30rpx;
+    border-radius: 15rpx;
+    background-color: #dff2fb;
+}

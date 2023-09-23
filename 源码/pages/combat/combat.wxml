@@ -1,0 +1,30 @@
+<image class="banner" src="/images/banner_combat.png"></image>
+<view bindtap="onSearchTap" class="search row">
+    <view class="search-box row">
+        <image class="search-icon" src="/images/icon_search_v2.png"></image>
+        <view class="search-input">请输入关键词搜索聊天话术</view>
+    </view>
+    <view class="search-button">搜索</view>
+</view>
+<ad-custom unit-id="adunit-c95ce44f17f1dba6" ></ad-custom>
+<view class="title">秒变男神</view>
+<view class="interesting-list row">
+    <image bindtap="onInterestingItemTap" class="interesting-item" data-type="mzrj" src="/images/interesting_mzrj.png"></image>
+    <image bindtap="onInterestingItemTap" class="interesting-item" data-type="zpxt" src="/images/interesting_zpxt.png"></image>
+    <image bindtap="onInterestingItemTap" class="interesting-item" data-type="nscd" src="/images/interesting_nscd.png"></image>
+    <image bindtap="onInterestingItemTap" class="interesting-item" data-type="pyq" src="/images/interesting_pyq.png"></image>
+    <image bindtap="onInterestingItemTap" class="interesting-item" data-type="djt" src="/images/interesting_djt.png"></image>
+    <image bindtap="onInterestingItemTap" class="interesting-item" data-type="chp" src="/images/interesting_chp.png"></image>
+</view>
+<view class="title" style="margin-bottom:0;">实战案例</view>
+<view class="article-list">
+    <view bindtap="onArticleItemTap" class="article-item row" data-id="{{item.id}}" data-locked="{{item.locked}}" wx:for="{{articleList}}">
+        <image class="article-image" src="{{item.image}}"></image>
+        <view>
+            <view class="article-title double-line">{{item.title}}</view>
+            <view class="article-count">{{item.likeCount}}人觉得有用</view>
+        </view>
+    </view>
+</view>
+<xs-member-dialog show="{{dialogShow}}"></xs-member-dialog>
+<ad unit-id="adunit-c7dfcae441405d37" ad-type="video" ad-theme="white" ></ad>

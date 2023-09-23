@@ -1,0 +1,9 @@
+<swiper bindchange="onSwiperChange" circular="{{true}}" class="image-swiper" indicatorActiveColor="#fff" indicatorDots="{{true}}" style="height:{{swiperHeight}}rpx;">
+    <swiper-item wx:for="{{diaryDetail.imageList}}">
+        <image bindload="onImageLoad" class="image" data-url="{{item.url}}" mode="widthFix" src="{{item.url}}"></image>
+    </swiper-item>
+</swiper>
+<view class="title">{{diaryDetail.title}}</view>
+<view class="text">
+    <text>{{diaryDetail.text}}</text>
+</view>

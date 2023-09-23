@@ -1,0 +1,27 @@
+.box {
+    margin: 60rpx;
+    padding: 60rpx;
+    border-radius: 30rpx;
+    box-shadow: 0 0 30rpx #ccc;
+}
+
+.title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.text,.title {
+    font-size: 30rpx;
+}
+
+.text {
+    margin-top: 60rpx;
+    color: #888;
+}
+
+.video {
+    width: 630rpx;
+    height: 1120rpx;
+    margin: 60rpx;
+    text-align: center;
+}

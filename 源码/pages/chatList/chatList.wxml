@@ -1,0 +1,15 @@
+<ad unit-id="adunit-c7dfcae441405d37" ad-type="video" ad-theme="white" ad-intervals="30"></ad>
+<view class="chat-list">
+    <view class="chat-item" wx:if="{{chatList}}" wx:for="{{chatList}}" wx:for-item="i">
+        <view class="dialogue-list">
+            <view class="dialogue-item row" wx:for="{{i.dialogueList}}" wx:for-item="j">
+                <image class="dialogue-item-icon" src="/images/icon_male.png" wx:if="{{j.type=='male'}}"></image>
+                <image class="dialogue-item-icon" src="/images/icon_female.png" wx:if="{{j.type=='female'}}"></image>
+                <image class="dialogue-item-icon" src="/images/icon_tip.png" wx:if="{{j.type=='tip'}}"></image>
+                <view class="dialogue-item-text">{{j.text}}</view>
+                <image bindtap="onCopyTap" class="dialogue-item-copy" data-text="{{j.text}}" src="/images/icon_copy.png"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<xs-member-dialog show="{{dialogShow}}"></xs-member-dialog>

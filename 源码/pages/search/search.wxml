@@ -1,0 +1,52 @@
+<view class="search row">
+    <view class="search-box row">
+        <image class="search-icon" src="/images/icon_search_v2.png"></image>
+        <input bindinput="onKeywordInput" class="search-input" placeholder="请输入关键词搜索聊天话术" value="{{keyword}}"></input>
+        <image bindtap="onDeleteTap" class="search-icon" src="/images/icon_delete_v2.png" wx:if="{{keyword}}"></image>
+    </view>
+    <view bindtap="onSearchTap" class="search-button">搜索</view>
+</view>
+<view class="tip-list row" wx:if="{{!resultShow}}">
+    <view class="tip-item">海量聊天话术库每日更新</view>
+    <view class="tip-item" style="text-align:right;">今日新增{{count}}条话术</view>
+</view>
+<view class="hot" wx:if="{{!resultShow}}">
+    <view class="hot-box row">
+        <view class="hot-title">热门搜索</view>
+    </view>
+    <view class="hot-list row">
+        <view bindtap="onHotItemTap" class="hot-item" data-keyword="{{item}}" wx:for="{{hotList}}">{{item}}</view>
+    </view>
+    <view bindtap="onChangeTap" class="hot-button row">
+        <image class="hot-button-icon" src="/images/icon_change_v2.png"></image>
+        <view bindtap="onHotChangeTap" class="hot-button-text">换一换</view>
+    </view>
+</view>
+<view class="record" wx:if="{{!resultShow}}">
+    <view class="record-box row">
+        <view class="record-title">搜索记录</view>
+        <view bindtap="onClearTap" class="record-clear">清除记录</view>
+        <image bindtap="onClearTap" class="record-icon" src="/images/icon_clear_v2.png"></image>
+    </view>
+    <view class="record-list">
+        <view bindtap="onRecordItemTap" class="record-item" data-keyword="{{item}}" wx:for="{{recordList}}">{{item}}</view>
+    </view>
+</view>
+<view class="tab-list row" wx:if="{{resultShow}}">
+    <view bindtap="onTabItemTap" class="tab-item" data-type="fuzzy" style="{{type=='fuzzy'?'border-radius:45rpx 0 0 45rpx;color:#fff;background-color:#eb82a0':''}}">模糊查询</view>
+    <view bindtap="onTabItemTap" class="tab-item" data-type="precise" style="{{type=='precise'?'border-radius:0 45rpx 45rpx 0;color:#fff;background-color:#eb82a0':''}}">精确查询</view>
+</view>
+<view class="chat-list" wx:if="{{resultShow}}">
+    <view class="chat-item" wx:if="{{chatList}}" wx:for="{{chatList}}" wx:for-item="i">
+        <view class="dialogue-list">
+            <view class="dialogue-item row" wx:for="{{i.dialogueList}}" wx:for-item="j">
+                <image class="dialogue-item-icon" src="/images/icon_male.png" wx:if="{{j.type=='male'}}"></image>
+                <image class="dialogue-item-icon" src="/images/icon_female.png" wx:if="{{j.type=='female'}}"></image>
+                <image class="dialogue-item-icon" src="/images/icon_tip.png" wx:if="{{j.type=='tip'}}"></image>
+                <view class="dialogue-item-text">{{j.text}}</view>
+                <image bindtap="onCopyTap" class="dialogue-item-copy" data-text="{{j.text}}" src="/images/icon_copy.png"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<xs-member-dialog show="{{dialogShow}}"></xs-member-dialog>

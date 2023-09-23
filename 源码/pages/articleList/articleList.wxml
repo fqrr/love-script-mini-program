@@ -1,0 +1,14 @@
+<scroll-view class="type-list row" scrollX="{{true}}">
+    <view bindtap="onCategoryItemTap" class="type-item" data-id="{{item.id}}" wx:for="{{categoryList}}">
+        <view class="type-item-name {{category2Id==item.id?'type-item-highlight':''}}">{{item.name}}</view>
+        <view class="type-item-mark" wx:if="{{category2Id==item.id}}"></view>
+    </view>
+</scroll-view>
+<view class="article-list">
+    <view bindtap="onArticleItemTap" class="article-item" data-id="{{item.id}}" wx:if="{{articleList}}" wx:for="{{articleList}}" wx:key="index">
+        <view class="article-item-title single-line">{{item.title}}</view>
+        <view class="article-item-subtitle">{{item.likeCount}}人觉得有用</view>
+    </view>
+</view>
+<xs-member-dialog show="{{dialogShow}}"></xs-member-dialog>
+<ad unit-id="adunit-c7dfcae441405d37" ad-type="video" ad-theme="white" ></ad>

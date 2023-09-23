@@ -1,0 +1,23 @@
+<image class="banner" src="{{testDetail.image}}"></image>
+<view class="container" style="{{testStatus=='4'?'padding-bottom:330rpx':''}}">
+    <view class="title">题目：{{testDetail.title}}</view>
+    <view class="text" wx:if="{{testStatus=='1'}}">{{testDetail.text}}</view>
+    <view class="question" wx:if="{{testStatus=='2'}}">{{testDetail.questionList[testIndex].question}}
+  </view>
+    <view class="option-list" wx:if="{{testStatus=='2'}}">
+        <radio-group>
+            <view bindtap="onOptionItemTap" class="option-item" data-score="{{item.score}}" wx:for="{{testDetail.questionList[testIndex].optionList}}">
+                <radio color="#f6c844">{{item.option}}</radio>
+            </view>
+        </radio-group>
+    </view>
+    <view class="answer" wx:if="{{testStatus=='4'}}">{{answer}}</view>
+    <view class="description" wx:if="{{testStatus=='4'}}">{{description}}</view>
+</view>
+<view class="bottom" wx:if="{{testStatus!='2'}}">
+    <view bindtap="onStartTap" class="bottom-submit" wx:if="{{testStatus=='1'}}">开始测试</view>
+    <view bindtap="onSubmitTap" class="bottom-submit" wx:if="{{testStatus=='3'}}">提交</view>
+    <view bindtap="onLikeTap" class="bottom-like" wx:if="{{testStatus=='4'}}">准确</view>
+    <view bindtap="onUnlikeTap" class="bottom-unlike" wx:if="{{testStatus=='4'}}">不准确</view>
+    <view bindtap="onRestartTap" class="bottom-submit" wx:if="{{testStatus=='4'}}">重新测试</view>
+</view>

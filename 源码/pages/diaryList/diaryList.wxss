@@ -1,0 +1,32 @@
+page {
+    background-color: #f5f5f5;
+}
+
+.diary-list {
+    flex-wrap: wrap;
+    padding-left: 22.5rpx;
+    padding-bottom: 30rpx;
+}
+
+.diary-item {
+    width: 330rpx;
+    height: 570rpx;
+    margin-top: 30rpx;
+    margin-left: 15rpx;
+    background-color: #fff;
+    border-radius: 0 0 15rpx 15rpx;
+}
+
+.diary-item-poster {
+    width: 330rpx;
+    height: 450rpx;
+}
+
+.diary-item-title {
+    width: 300rpx;
+    height: 90rpx;
+    margin: 15rpx;
+    font-size: 26.25rpx;
+    line-height: 45rpx;
+    font-weight: 700;
+}

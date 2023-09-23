@@ -1,0 +1,16 @@
+<ad unit-id="adunit-c7dfcae441405d37" ad-type="video" ad-theme="white" ad-intervals="30"></ad>
+<view class="test-list">
+    <view bindtap="onTestItemTap" class="test-item row" data-id="{{item.id}}" wx:for="{{testList}}">
+        <image class="test-image" src="{{item.image}}"></image>
+        <view>
+            <view class="test-title single-line">{{item.title}}</view>
+            <view class="test-count row">
+                <view class="test-count-test">{{item.viewCount}}人测试过</view>
+                <view class="test-count-like">{{item.likeCount}}人觉得准确</view>
+            </view>
+        </view>
+    </view>
+</view>
+<xs-member-dialog show="{{dialogShow}}"></xs-member-dialog>
+<ad unit-id="adunit-c7dfcae441405d37" ad-type="video" ad-theme="white" ad-intervals="30"></ad>
+

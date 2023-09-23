@@ -1,0 +1,13 @@
+<view bindtap="onCloseTap" class="component" wx:if="{{show}}">
+    <view catchtap="onDialogTap" class="dialog">
+        <image bindtap="onCloseTap" class="dialog-icon" src="/images/icon_close.png"></image>
+        <view class="dialog-title">
+            <text>{{title}}</text>
+        </view>
+        <view class="dialog-content">
+            <text>{{content}}</text>
+        </view>
+        <image bindlongpress="onImageLongPress" class="dialog-image" src="{{image}}"></image>
+        <view bindtap="onConfirmTap" class="dialog-submit">复制微信</view>
+    </view>
+</view>

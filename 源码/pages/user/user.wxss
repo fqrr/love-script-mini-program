@@ -1,0 +1,105 @@
+.header {
+    padding: 30rpx;
+    width: 690rpx;
+    height: 120rpx;
+}
+
+.header-avatarurl {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header-nickname {
+    width: 540rpx;
+    height: 120rpx;
+    margin-left: 30rpx;
+    font-size: 30rpx;
+    line-height: 120rpx;
+    font-weight: 700;
+}
+
+.member-box {
+    width: 690rpx;
+    height: 90rpx;
+    margin-top: 15rpx;
+    margin-left: 30rpx;
+    border-radius: 15rpx 15rpx 0 0;
+    background-color: #222;
+}
+
+.member-icon {
+    width: 45rpx;
+    height: 45rpx;
+    margin: 22.5rpx 30rpx;
+}
+
+.member-text {
+    width: 375rpx;
+    height: 90rpx;
+    font-size: 22.5rpx;
+    line-height: 90rpx;
+    color: #d4a481;
+}
+
+.member-button {
+    width: 150rpx;
+    height: 45rpx;
+    margin: 22.5rpx 30rpx;
+    font-size: 22.5rpx;
+    line-height: 45rpx;
+    text-align: center;
+    border-radius: 22.5rpx;
+    color: #222;
+    background-color: #d4a481;
+}
+
+.menu-list {
+    width: 750rpx;
+    padding-bottom: 120rpx;
+    border-top: 1rpx solid #eee;
+}
+
+.menu-item {
+    width: 750rpx;
+    height: 120rpx;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.menu-item,.menu-item::after {
+    border: none;
+    border-bottom: 1rpx solid #eee;
+}
+
+.menu-item-icon {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 30rpx;
+}
+
+.menu-item-content {
+    width: 510rpx;
+    height: 60rpx;
+    margin: 30rpx 0;
+    font-size: 30rpx;
+    line-height: 60rpx;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 750rpx;
+    height: 90rpx;
+    font-size: 30rpx;
+    line-height: 90rpx;
+    text-align: center;
+    color: #888;
+    border-top: 15rpx solid #f7f7f7;
+}

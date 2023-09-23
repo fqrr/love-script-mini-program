@@ -1,0 +1,17 @@
+.image,.image-swiper {
+    width: 750rpx;
+}
+
+.title {
+    font-size: 30rpx;
+    font-weight: 700;
+}
+
+.text,.title {
+    width: 690rpx;
+    margin: 30rpx;
+}
+
+.text {
+    font-size: 26.25rpx;
+}

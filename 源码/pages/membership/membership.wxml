@@ -1,0 +1,50 @@
+<block wx:if="{{enabled}}">
+    <image class="banner" src="/images/banner_membership.png"></image>
+    <view class="header">
+        <view class="row">
+            <view class="header-avatarurl">
+                <open-data type="userAvatarUrl"></open-data>
+            </view>
+            <view>
+                <view class="header-nickname">
+                    <open-data type="userNickName"></open-data>
+                </view>
+                <view class="header-member">{{memberType?memberType+' 有效期至'+memberTime:'尚未成为会员'}}</view>
+            </view>
+        </view>
+        <view class="header-tip">{{memberType?'马上续费会员，能享受更多优惠':'您还不是会员，请选择会员类型升级'}}</view>
+    </view>
+    <view class="plan-list">
+        <view bindtap="onPlanItemTap" class="plan-item" data-type="{{item.type}}" style="{{selectedPlanType==item.type?'background-color:#fdd6b9':''}}" wx:for="{{planList}}">
+            <view class="plan-item-name row" style="{{selectedPlanType==item.type?'background-color:#f5caab':''}}">
+                <image class="plan-item-name-icon" src="/images/icon_diamond.png"></image>
+                <view class="plan-item-name-text">{{item.name}}</view>
+            </view>
+            <view class="plan-item-price">
+                <text style="font-size:30rpx;">￥</text>{{item.price}}</view>
+            <view class="plan-item-tip">{{item.tip}}</view>
+            <view class="plan-item-text" style="{{selectedPlanType==item.type?'color:#fff;background-color:#f76371':''}}">
+        {{item.text}}</view>
+            <view class="plan-item-label">{{item.label}}</view>
+        </view>
+    </view>
+    <swiper autoplay="true" circular="true" class="notice-list row" vertical="true">
+        <swiper-item wx:for="{{noticeList}}">
+            <view class="notice-item">{{item}}</view>
+        </swiper-item>
+    </swiper>
+    <view bindtap="onSubmitTap" class="plan-submit">{{memberType?'续费':'升级'}}会员</view>
+    <image class="poster" mode="widthFix" src="/images/poster_membership.png"></image>
+    <swiper autoplay="true" circular="true" class="notice-list row" vertical="true">
+        <swiper-item wx:for="{{noticeList}}">
+            <view class="notice-item">{{item}}</view>
+        </swiper-item>
+    </swiper>
+    <view class="tip-title">购买须知</view>
+    <view class="tip-text">1.购买后立即生效，重复购买会自动叠加VIP时长。</view>
+    <view class="tip-text">2.会员功能属于虚拟产品，购买后不支持退款。请谨慎购买，仔细了解本软件的功能后再进行购买。</view>
+    <view class="tip-text" style="padding-bottom:120rpx;">3.如果支付成功后没有成功开通或续费vip会员，请尝试重新进入小程序刷新，或者直接联系客服把您查看。</view>
+    <view bindtap="onSubmitTap" class="bottom-submit">{{memberType?'续费':'升级'}}会员，独享恋爱秘籍</view>
+    <xs-payment-dialog bindconfirm="onSubmitTap" show="{{dialogShow}}"></xs-payment-dialog>
+</block>
+<image bindtap="onBackgroundTap" class="background" mode="widthFix" src="/images/404.png" wx:if="{{!enabled}}"></image>

@@ -1,0 +1,9 @@
+<view class="diary-list row">
+  <ad unit-id="adunit-73054b7e1b6c95f1" ></ad>
+
+    <view bindtap="onDiaryItemTap" class="diary-item" data-id="{{item.id}}" wx:for="{{diaryList}}">
+        <image class="diary-item-poster" src="{{item.poster}}"></image>
+        <view class="diary-item-title double-line">{{item.title}}</view>
+    </view>
+</view>
+<ad unit-id="adunit-c7dfcae441405d37" ad-type="video" ad-theme="white" ></ad>

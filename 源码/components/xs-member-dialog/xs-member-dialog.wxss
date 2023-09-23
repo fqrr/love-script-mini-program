@@ -1,0 +1,53 @@
+.component {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog {
+    width: 630rpx;
+    background-color: #fff;
+    border-radius: 7.5rpx;
+}
+
+.dialog-icon {
+    display: block;
+    width: 30rpx;
+    height: 30rpx;
+    margin-top: 15rpx;
+    margin-left: 585rpx;
+}
+
+.dialog-image {
+    width: 390rpx;
+    height: 390rpx;
+    margin-left: 120rpx;
+}
+
+.dialog-subtitle {
+    width: 510rpx;
+    margin: 30rpx 60rpx;
+    color: #888;
+}
+
+.dialog-submit,.dialog-subtitle {
+    font-size: 30rpx;
+    text-align: center;
+}
+
+.dialog-submit {
+    width: 570rpx;
+    height: 90rpx;
+    margin: 30rpx;
+    line-height: 90rpx;
+    color: #fff;
+    background-color: #f90;
+    border-radius: 7.5rpx;
+}

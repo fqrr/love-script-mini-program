@@ -1,0 +1,253 @@
+.banner {
+    width: 750rpx;
+    height: 300rpx;
+}
+
+.search-box {
+    width: 690rpx;
+    margin: 30rpx;
+}
+
+.search-input {
+    width: 480rpx;
+    height: 30rpx;
+    padding: 22.5rpx 30rpx;
+    border: 1rpx solid #ccc;
+    border-radius: 15rpx;
+}
+
+.search-icon {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.search-text {
+    width: 390rpx;
+    color: #888;
+}
+
+.search-button,.search-text {
+    height: 30rpx;
+    margin-left: 30rpx;
+    font-size: 30rpx;
+    line-height: 30rpx;
+}
+
+.search-button {
+    width: 120rpx;
+    padding: 22.5rpx 0;
+    border-radius: 15rpx;
+    text-align: center;
+    background-color: #f6c844;
+}
+
+.search-text-list {
+    margin: 0 30rpx;
+    height: 30rpx;
+    font-size: 22.5rpx;
+    line-height: 30rpx;
+}
+
+.search-text-item {
+    margin-left: 15rpx;
+    color: #00f;
+    text-decoration: underline;
+}
+
+.search-image-list {
+    padding: 30rpx 15rpx;
+}
+
+.search-image-image {
+    width: 150rpx;
+    height: 210rpx;
+    margin: 0 15rpx;
+    border-radius: 15rpx;
+}
+
+.category-list {
+    border-top: 15rpx solid #eee;
+    width: 750rpx;
+}
+
+.tip {
+    width: 690rpx;
+    height: 30rpx;
+    margin: 30rpx;
+    font-size: 22.5rpx;
+    line-height: 30rpx;
+    color: #ea5f83;
+}
+
+.category-item {
+    width: 750rpx;
+}
+
+.category-item-name {
+    margin: 0 30rpx;
+}
+
+.category-item-name-title {
+    height: 45rpx;
+    margin-top: 7.5rpx;
+    font-size: 37.5rpx;
+    line-height: 37.5rpx;
+    font-weight: 700;
+}
+
+.category-item-name-subtitle {
+    height: 22.5rpx;
+    margin-top: 22.5rpx;
+    margin-left: 15rpx;
+    padding-left: 15rpx;
+    font-size: 22.5rpx;
+    line-height: 22.5rpx;
+    border-left: 7.5rpx solid #888;
+    color: #888;
+}
+
+.topic-list {
+    flex-wrap: wrap;
+    width: 720rpx;
+    padding: 15rpx;
+}
+
+.topic-item {
+    width: 210rpx;
+    height: 30rpx;
+    margin: 15rpx;
+    padding: 22.5rpx 0;
+    font-size: 30rpx;
+    line-height: 30rpx;
+    border-radius: 15rpx;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.combat-title {
+    width: 750rpx;
+    border-top: 15rpx solid #eee;
+}
+
+.combat-title-icon {
+    width: 45rpx;
+    height: 45rpx;
+    margin-top: 30rpx;
+    margin-left: 30rpx;
+}
+
+.combat-title-text {
+    width: 450rpx;
+    height: 45rpx;
+    margin-top: 30rpx;
+    margin-left: 15rpx;
+    font-size: 30rpx;
+    line-height: 45rpx;
+    font-weight: 700;
+}
+
+.combat-title-more {
+    width: 180rpx;
+    height: 60rpx;
+    margin-top: 30rpx;
+    font-size: 22.5rpx;
+    line-height: 60rpx;
+    text-align: right;
+}
+
+.combat-item {
+    width: 660rpx;
+    height: 90rpx;
+    margin: 15rpx 30rpx;
+    padding: 15rpx;
+    border-radius: 15rpx;
+    background-color: #feedf3;
+}
+
+.combat-item-title {
+    width: 600rpx;
+    height: 60rpx;
+    font-size: 30rpx;
+    line-height: 60rpx;
+}
+
+.combat-item-count {
+    width: 600rpx;
+    height: 30rpx;
+    font-size: 22.5rpx;
+    line-height: 30rpx;
+    color: #ea5f83;
+}
+
+.combat-item-icon {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 15rpx 0;
+}
+
+.hot-title {
+    width: 750rpx;
+    border-top: 15rpx solid #eee;
+}
+
+.hot-title-icon {
+    width: 45rpx;
+    height: 45rpx;
+    margin-top: 30rpx;
+    margin-left: 30rpx;
+}
+
+.hot-title-text {
+    width: 450rpx;
+    height: 45rpx;
+    margin-top: 30rpx;
+    margin-left: 15rpx;
+    font-size: 30rpx;
+    line-height: 45rpx;
+    font-weight: 700;
+}
+
+.hot-list {
+    flex-wrap: wrap;
+}
+
+.hot-item {
+    width: 330rpx;
+    height: 450rpx;
+    margin-top: 30rpx;
+    margin-left: 30rpx;
+}
+
+.hot-item-image {
+    width: 330rpx;
+    height: 330rpx;
+    border-radius: 15rpx;
+}
+
+.hot-item-title {
+    width: 330rpx;
+    height: 90rpx;
+    font-size: 30rpx;
+    line-height: 45rpx;
+}
+
+.hot-item-count {
+    width: 330rpx;
+    height: 30rpx;
+    font-size: 22.5rpx;
+    line-height: 30rpx;
+    color: #888;
+}
+
+.hot-more {
+    width: 690rpx;
+    height: 60rpx;
+    margin: 30rpx;
+    font-size: 30rpx;
+    line-height: 60rpx;
+    text-align: center;
+    color: #ea5f83;
+    background-color: #feedf3;
+    border-radius: 30rpx;
+    border: 1rpx solid #ea5f83;
+}

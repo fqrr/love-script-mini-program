@@ -1,0 +1,60 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/combat/combat",
+        "pages/discover/discover",
+        "pages/test/test",
+        "pages/user/user",
+        "pages/search/search",
+        "pages/chatList/chatList",
+        "pages/membership/membership",
+        "pages/about/about",
+        "pages/payment/payment",
+        "pages/articleList/articleList",
+        "pages/articleDetail/articleDetail",
+        "pages/dialogue/dialogue",
+        "pages/dialogueDetail/dialogueDetail",
+        "pages/testDetail/testDetail",
+        "pages/diaryList/diaryList",
+        "pages/diaryDetail/diaryDetail",
+        "pages/momentDetail/momentDetail"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#f6c844",
+        "navigationBarTitleText": "恋爱话术",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#888",
+        "selectedColor": "#f6c844",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "images/tabbar_home.png",
+                "selectedIconPath": "images/tabbar_home_selected.png"
+            },
+            {
+                "pagePath": "pages/combat/combat",
+                "text": "话术",
+                "iconPath": "images/tabbar_combat.png",
+                "selectedIconPath": "images/tabbar_combat_selected.png"
+            },
+            {
+                "pagePath": "pages/discover/discover",
+                "text": "发现",
+                "iconPath": "images/tabbar_discover.png",
+                "selectedIconPath": "images/tabbar_discover_selected.png"
+            },
+            {
+                "pagePath": "pages/test/test",
+                "text": "测试",
+                "iconPath": "images/tabbar_test.png",
+                "selectedIconPath": "images/tabbar_test_selected.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

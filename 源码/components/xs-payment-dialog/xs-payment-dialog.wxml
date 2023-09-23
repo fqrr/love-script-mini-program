@@ -1,0 +1,15 @@
+<view bindtap="onCloseTap" class="component" wx:if="{{show}}">
+    <view catchtap="onDialogTap" class="dialog">
+        <image bindtap="onCloseTap" class="dialog-icon" src="/images/icon_close.png"></image>
+        <view class="dialog-title">升级会员</view>
+        <view class="dialog-subtitle">
+            <span style="color:#f76371;">293840</span>人已升级</view>
+        <view class="dialog-label-list">
+            <view class="dialog-label-item">成功脱单(1832)</view>
+            <view class="dialog-label-item">后悔开晚了(2156)</view>
+            <view class="dialog-label-item">老司机必备(1902)</view>
+            <view class="dialog-label-item">超级好用(2346)</view>
+        </view>
+        <view bindtap="onConfirmTap" class="dialog-submit">继续支付</view>
+    </view>
+</view>

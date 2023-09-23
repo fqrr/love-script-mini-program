@@ -1,0 +1,67 @@
+.type-list {
+    display: flex;
+    margin-top: 15rpx;
+    white-space: nowrap;
+    border-bottom: 1rpx solid #eee;
+}
+
+.type-item {
+    display: inline-block;
+    width: 150rpx;
+}
+
+.type-item-name {
+    width: 150rpx;
+    height: 60rpx;
+    font-size: 30rpx;
+    text-align: center;
+}
+
+.type-item-mark {
+    width: 90rpx;
+    height: 7.5rpx;
+    margin: 0 30rpx;
+    background-color: #f6c844;
+}
+
+.type-item-highlight {
+    color: #f6c844;
+}
+
+.article-item {
+    width: 690rpx;
+    padding: 30rpx;
+    border-bottom: 1rpx solid #eee;
+}
+
+.article-item-title {
+    font-size: 30rpx;
+    line-height: 45rpx;
+}
+
+.article-item-subtitle {
+    font-size: 22.5rpx;
+    line-height: 45rpx;
+    color: #888;
+}
+
+.chat-item-lock {
+    width: 120rpx;
+    height: 120rpx;
+    margin: 15rpx 0;
+}
+
+.chat-item-title {
+    width: 510rpx;
+    height: 60rpx;
+    margin-top: 15rpx;
+    font-size: 30rpx;
+    line-height: 60rpx;
+    text-align: center;
+}
+
+.chat-item-buy {
+    width: 150rpx;
+    height: 60rpx;
+    margin-left: 150rpx;
+}

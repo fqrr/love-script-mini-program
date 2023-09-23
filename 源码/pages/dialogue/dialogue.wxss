@@ -1,0 +1,59 @@
+.banner {
+    width: 750rpx;
+    height: 450rpx;
+}
+
+.top {
+    padding: 30rpx;
+    border-bottom: 15rpx solid #eee;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.subtitle,.title {
+    width: 690rpx;
+    height: 45rpx;
+    font-size: 30rpx;
+    line-height: 45rpx;
+}
+
+.tab-list {
+    width: 450rpx;
+    height: 90rpx;
+    margin: 30rpx 150rpx;
+    border: 1rpx solid #f6c844;
+    border-radius: 45rpx;
+}
+
+.tab-item {
+    width: 225rpx;
+    height: 90rpx;
+    font-size: 30rpx;
+    line-height: 90rpx;
+    color: #f6c844;
+    text-align: center;
+}
+
+.dialogue-item {
+    width: 690rpx;
+    height: 90rpx;
+    margin: 15rpx 30rpx;
+    border-radius: 45rpx;
+    background-color: #eee;
+}
+
+.dialogue-item-title {
+    width: 570rpx;
+    height: 90rpx;
+    padding: 0 30rpx;
+    font-size: 30rpx;
+    line-height: 90rpx;
+}
+
+.dialogue-item-icon {
+    width: 30rpx;
+    height: 30rpx;
+    padding: 30rpx 0;
+}

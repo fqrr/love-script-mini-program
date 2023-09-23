@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "xs-member-dialog": "./xs-member-dialog",
+        "xs-payment-dialog": "../xs-payment-dialog/xs-payment-dialog",
+        "xs-service-dialog": "../xs-service-dialog/xs-service-dialog"
+    }
+}
